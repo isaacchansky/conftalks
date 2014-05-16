@@ -1,0 +1,27 @@
+{
+  "name": "conf-talks",
+  "version": "0.0.1",
+  "author": "Isaac Chansky",
+  "license": "WTFPL",
+  "description": "A way to watch awesome conference talks from awesome people.",
+  "main": "index.js",
+  "scripts": {
+    "install": "napa; browserify ./app/js/index.js > ./app/js/bundle.js",
+    "start": "lessc app/less/main.less app/css/main.css; browserify ./app/js/index.js > ./app/js/bundle.js; beefy ./js/index.js:js/bundle.js --liv --cwd ./app",
+    "test": "karma start karma.conf",
+    "less": "lessc app/less/main.less app/css/main.css",
+    "build": "rm -rf ./dist; mkdir -p ./dist/{js,css,img}; lessc app/less/main.less dist/css/main.css; browserify ./app/js/index.js > ./dist/js/bundle.js"
+  },
+  "napa": {
+    "angular": "angular/bower-angular",
+    "angular-route": "angular/bower-angular-route"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "karma": "latest",
+    "karma-browserify": "0.0.6",
+    "beefy": "^1.1.0",
+    "less": "^1.7.0",
+    "sinker-grid": "git://github.com/isaacchansky/sinker-grid.git"
+  }
+}

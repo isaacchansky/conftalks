@@ -1,0 +1,52 @@
+@import "../../node_modules/sinker-grid/less/grid";
+
+body {
+  margin: 0;
+  background: @white;
+}
+
+.container{
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.navigation{
+  margin: 0;
+  background: @grey;
+  color: @black;
+  .sg-section;
+  .branding{
+    .sg-make-col(8,12);
+    h1{
+      font-size: 1.2em;
+      margin: 0;
+    }
+    p{
+      font-weight: 300;
+      margin: 0;
+    }
+  }
+  .menu{
+    .sg-make-col(4,12);
+    .align-bottom;
+    list-style: none;
+    text-align: right;
+    li{
+      display: inline-block;
+      a{
+        color: @blue;
+        text-decoration: none;
+        padding: 0.5rem;
+        &:hover{
+          color: darken(@blue, 10%);
+        }
+      }
+    }
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+
+}
