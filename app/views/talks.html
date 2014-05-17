@@ -1,0 +1,14 @@
+<h1>All Talks</h1>
+<div ng-repeat="talk in talks">
+  <h2>{{talk.title}}</h2>
+  <a href="{{talk.videoUrl}}"> youtube link to be replaced with video</a>
+  <ul>
+    <li ng-repeat="tag in talk.tags">{{tag}}</li>
+  </ul>
+
+  <div class="speaker">
+    <h3>{{talk.speaker.name}}</h3>
+    <a href="http://github.com/{{talk.speaker.githubName}}">github</a>
+    <a href="http://gittip.com/{{talk.speaker.twitterName}}">twitter</a>
+  </div>
+</div>

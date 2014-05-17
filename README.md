@@ -14,8 +14,6 @@ Watch awesome conference talks by awesome people.
 - npm install -g karma-browserify
 - npm test
 
-
-
 	###Links
  - angular: http://angularjs.org/
  - browserify: http://browserify.org/
