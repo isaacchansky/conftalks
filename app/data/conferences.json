@@ -1,0 +1,112 @@
+{
+  "cssconf-us-2013": {
+    "title": "CSS conf US 2013",
+    "id": "cssconf-us-2013",
+    "talks": [
+      {
+        "url": "https://www.youtube.com/watch?v=9YWgk3jUBOQ",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=x0VR3lUOpdc",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=b9HGzJIcfDE",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=Ik9Lhht7zSs",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=Xe0ezuJEwPU",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=xbpnqbM6cRk",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=ty3BnpItCbQ",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=C0c_HYBq2EM",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=KcW_w-drNhE",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=y2-du2QiG7Q",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=5JMy2Mon-Q4",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=fBX29cqgveg",
+        "slides": ""
+      }
+    ]
+  },
+
+  "jsconf-us-2014": {
+    "title": "JS conf US 2014",
+    "id": "jsconf-us-2014",
+    "talks": [
+      {
+        "url": "https://www.youtube.com/watch?v=90NsjKvz9Ns",
+        "slides": "http://markmarkoh.com/jsconf2014"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=pj4U_W0OFoE",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=lb-8euLqfRg",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=vtvHOn9mIB4",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=Bp3Jy177NvU",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=-xNZYr40QOk",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=8-Vyus9TPZ0",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=0_mgp_VWIe0",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=6QAzmJ4lm3I",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=Y0DCZdAruvo",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=lm4jEcnWeKI",
+        "slides": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=v_4tCTRH8JQ",
+        "slides": ""
+      }
+    ]
+  }
+}
+

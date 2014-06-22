@@ -1,11 +1,10 @@
 'use strict';
 
-exports.talks = function($scope) {
-  $scope.talks = require('../data/talks');
+exports.conferences = function($scope) {
+  $scope.conferences = require('../data/conferences');
 };
 
 
 exports.search = function($scope) {
-  $scope.talks = require('../data/talks');
 };
 
