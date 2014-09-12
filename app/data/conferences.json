@@ -1,7 +1,6 @@
 {
   "cssconf-us-2013": {
     "title": "CSS conf US 2013",
-    "id": "cssconf-us-2013",
     "talks": [
       {
         "url": "https://www.youtube.com/watch?v=9YWgk3jUBOQ",
@@ -56,7 +55,6 @@
 
   "jsconf-us-2014": {
     "title": "JS conf US 2014",
-    "id": "jsconf-us-2014",
     "talks": [
       {
         "url": "https://www.youtube.com/watch?v=90NsjKvz9Ns",
