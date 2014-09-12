@@ -5,6 +5,7 @@ require('angular-route/angular-route');
 
 var controllers = require('./controllers');
 var directives = require('./directives');
+var services = require('./services');
 var app = angular.module('app', ['ngRoute']);
 
 app.config([
@@ -28,7 +29,9 @@ app.config([
 
 app.directive('confVideo', directives.confvideo);
 
+app.service ('ytVideoDataService', services.ytVideoDataService);
+
 app.controller('confsCtrl', ['$scope', controllers.confs]);
-app.controller('singleConfCtrl', ['$scope', controllers.singleConf]);
+app.controller('singleConfCtrl', ['$scope', 'ytVideoDataService', controllers.singleConf]);
 app.controller('searchCtrl', ['$scope', controllers.search]);
 

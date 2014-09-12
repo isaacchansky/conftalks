@@ -36,7 +36,9 @@ exports.confvideo = function(){
   return {
     restrict: 'E',
     scope: {
-      url: '=url'
+      url: '=url',
+      title: '=title',
+      description: '=description'
     },
     templateUrl: '../views/video.html',
     link: function(scope, element){
