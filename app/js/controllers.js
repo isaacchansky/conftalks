@@ -12,9 +12,3 @@ exports.singleConf = function($scope, $routeParams) {
    $scope.talks = conference.talks;
 });
 };
-
-
-
-exports.search = function($scope) {
-};
-

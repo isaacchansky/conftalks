@@ -20,10 +20,6 @@ app.config([
       templateUrl: './views/single-conference.html',
       controller: 'singleConfCtrl'
     })
-    .when('/search', {
-      templateUrl: './views/search.html',
-      controller: 'searchCtrl'
-    })
     .otherwise({
       redirectTo: '/'
     });
