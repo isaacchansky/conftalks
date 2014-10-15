@@ -31,7 +31,9 @@ exports.singleConf = function($scope, ytVideoDataService) {
 };
 
 exports.watch = function($scope, $routeParams, $sce) {
-  $scope.url = $sce.trustAsResourceUrl("http://www.youtube.com/embed/"+$routeParams.id);
+  $scope.url = $sce.trustAsResourceUrl("http://www.youtube.com/embed/"+$routeParams.id+"?autoplay=1&color=white&controls=0");
   $scope.title = $routeParams.title;
   $scope.description = $routeParams.desc;
+
+  window.scrollTo(0, 300);
 }
