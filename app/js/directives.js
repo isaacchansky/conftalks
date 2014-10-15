@@ -18,7 +18,7 @@ exports.confvideo = function(){
     return p;
   };
 
-  var YTembed = function(parsedURI){
+  var ytUrl = function(parsedURI){
     return parsedURI.href;
   }
 
@@ -38,7 +38,31 @@ exports.confvideo = function(){
       var parsedURI = URIparser(scope.url);
 
       scope.placeholder = getPlaceholderImg(parsedURI);
-      scope.embed = YTembed(parsedURI);
+      scope.embed = ytUrl(parsedURI);
+      scope.id = parsedURI.paramHash.v;
+      scope.encodedTitle = encodeURI(scope.title);
+      scope.encodedDescription = encodeURI(scope.description);
+    }
+  }
+}
+
+exports.ytEmbed = function(){
+  var YTembed = function(url){
+    var iframe = document.createElement('iframe');
+    iframe.src = url;
+    iframe.setAttribute('allowfullscreen', true);
+    iframe.setAttribute('frameborder', 0);
+    return iframe;
+  }
+  return {
+    restrict: 'E',
+    scope: {
+      src: '=url',
+    },
+    templateUrl: '../views/video.html',
+    link: function(scope, element){
+      scope.embed = YTembed(scope.url);
+      element.append(scope.embed);
     }
   }
 }

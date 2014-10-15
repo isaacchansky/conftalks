@@ -17,6 +17,10 @@ app.config([
 			templateUrl: './views/conferences.html',
 			controller: 'confsCtrl'
 		})
+    .when('/watch', {
+      templateUrl: './views/watch.html',
+      controller: 'watchCtrl'
+    })
     .when('/:id', {
       templateUrl: './views/single-conference.html',
       controller: 'singleConfCtrl'
@@ -28,10 +32,11 @@ app.config([
 ]);
 
 app.directive('confVideo', directives.confvideo);
+app.directive('ytEmbed', directives.ytEmbed);
 
 app.service ('ytVideoDataService', services.ytVideoDataService);
 
 app.controller('confsCtrl', ['$scope', controllers.confs]);
 app.controller('singleConfCtrl', ['$scope', 'ytVideoDataService', controllers.singleConf]);
-app.controller('searchCtrl', ['$scope', controllers.search]);
+app.controller('watchCtrl', ['$scope', '$routeParams', '$sce', controllers.watch]);
 

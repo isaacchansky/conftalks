@@ -1,8 +1,18 @@
-.talk{
-  .sg-make-col(6, 12);
 
-  @media (max-width: 480px) {
-    .sg-make-section;
-    color: red;
-  }
+.video-container {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

@@ -10,11 +10,11 @@ exports.singleConf = function($scope, ytVideoDataService) {
 
   $scope.$on('$routeChangeSuccess', function (ev, current) {
 
-   var conf = $scope.conferences[current.params.id],
+    var conf = $scope.conferences[current.params.id],
        talkIDs = conf.talks.map(function(i){return i.url.split('=')[1];});
-   $scope.title = conf.title;
+    $scope.title = conf.title;
 
-   ytVideoDataService.getVideoData(talkIDs).
+    ytVideoDataService.getVideoData(talkIDs).
     then(function ytVideoDataSuccess (resp){
       $scope.talks = resp.data.items.map(function(item){
         return {
@@ -27,5 +27,11 @@ exports.singleConf = function($scope, ytVideoDataService) {
     function ytVideoDataFail (argument) {
     });
 
-});
+  });
 };
+
+exports.watch = function($scope, $routeParams, $sce) {
+  $scope.url = $sce.trustAsResourceUrl("http://www.youtube.com/embed/"+$routeParams.id);
+  $scope.title = $routeParams.title;
+  $scope.description = $routeParams.desc;
+}
