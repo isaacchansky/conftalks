@@ -6,6 +6,7 @@ require('angular-route/angular-route');
 var controllers = require('./controllers');
 var directives = require('./directives');
 var services = require('./services');
+var filters = require('./filters');
 var app = angular.module('app', ['ngRoute']);
 
 app.config([
@@ -40,3 +41,4 @@ app.controller('confsCtrl', ['$scope', controllers.confs]);
 app.controller('singleConfCtrl', ['$scope', 'ytVideoDataService', controllers.singleConf]);
 app.controller('watchCtrl', ['$scope', '$routeParams', '$sce', controllers.watch]);
 
+app.filter('truncateTitle', function(){ return filters.truncateTitle; });

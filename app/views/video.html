@@ -1,6 +1,6 @@
 <div class="row">
   <h2 class="title">
-    {{title}}
+    {{title | truncateTitle:60 }}
   </h2>
   <a class="placeholder-container" href="#/watch?id={{id}}&title={{encodedTitle}}&desc={{encodedDescription}}">
     <img class="placeholder" src="{{placeholder}}" alt="">
