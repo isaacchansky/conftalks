@@ -8,7 +8,6 @@
   "scripts": {
     "install": "napa; browserify ./app/js/index.js > ./app/js/bundle.js",
     "start": "lessc app/less/main.less app/css/main.css; browserify ./app/js/index.js > ./app/js/bundle.js; beefy ./js/index.js:js/bundle.js --liv --cwd ./app",
-    "test": "karma start karma.conf",
     "less": "lessc app/less/main.less app/css/main.css",
     "build": "rm -rf ./dist; mkdir -p ./dist/{js,css,img}; lessc app/less/main.less dist/css/main.css; browserify ./app/js/index.js > ./dist/js/bundle.js"
   },
