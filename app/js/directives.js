@@ -40,8 +40,8 @@ exports.confvideo = function(){
       scope.placeholder = getPlaceholderImg(parsedURI);
       scope.embed = ytUrl(parsedURI);
       scope.id = parsedURI.paramHash.v;
-      scope.encodedTitle = encodeURI(scope.title);
-      scope.encodedDescription = encodeURI(scope.description);
+      scope.encodedTitle = encodeURIComponent(scope.title);
+      scope.encodedDescription = encodeURIComponent(scope.description);
     }
   }
 }
