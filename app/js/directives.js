@@ -19,18 +19,11 @@ exports.confvideo = function(){
   };
 
   var YTembed = function(parsedURI){
-    var iframe = document.createElement('iframe');
-
-    iframe.src = parsedURI.href;
-    iframe.setAttribute('allowfullscreen', true);
-    iframe.setAttribute('frameborder', 0);
-    return iframe;
+    return parsedURI.href;
   }
 
   var getPlaceholderImg = function(parsedURI){
-    var img = document.createElement('img');
-    img.src = "http://img.youtube.com/vi/"+ parsedURI.paramHash['v']+"/0.jpg";
-    return img
+    return "http://img.youtube.com/vi/"+ parsedURI.paramHash['v']+"/0.jpg";
   };
 
   return {
@@ -46,7 +39,6 @@ exports.confvideo = function(){
 
       scope.placeholder = getPlaceholderImg(parsedURI);
       scope.embed = YTembed(parsedURI);
-      element.append(scope.placeholder);
     }
   }
 }
