@@ -1,3 +1,57 @@
+.talks{
+    text-align: center;
+}
+.talk{
+    background: @white;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 2px 2px rgba(0,0,0,0.2);
+    vertical-align: top;
+    display: inline-block;
+    margin: 10px;
+    width: 45%;
+
+    .title{
+        font-size: 1.5em;
+        font-weight: 500;
+        text-align: left;
+    }
+    .description{
+
+    }
+
+    .placeholder-container{
+        display: block;
+        position: relative;
+        &:after{
+            content: "▶";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            line-height: 50px;
+            font-size: 50px;
+            margin-left: -35px;
+            margin-top: -35px;
+            background: @yellow;
+            border-radius: 5px;
+            padding: 15px 15px 15px 20px;
+            color: @white;
+
+        }
+    }
+    .placeholder{
+        width: 100%;
+    }
+}
+
+.talk-page{
+    .title{
+        color: @black;
+    }
+    .description{
+        color: @black;
+    }
+}
 
 .video-container {
     position: relative;
@@ -16,3 +70,4 @@
     width: 100%;
     height: 100%;
 }
+
